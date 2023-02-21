@@ -1,0 +1,70 @@
+section {
+    font-size: 1.5rem;
+}
+
+section:first-child {
+    background-image: url(../img/s1b3.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 130px 0;
+}
+
+h1 {
+    font-size: 8rem;
+    margin-bottom: 40px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, .5);
+}
+
+h1, p {
+    text-align: center;
+}
+
+section:nth-child(2) {
+    background-color: #141414;
+}
+
+section:nth-child(2) > form {
+    background-color: #010101;
+    padding: 40px;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border-bottom: 3px solid #191919;
+    margin-bottom: 30px;
+}
+
+button {
+    background-color: #767474;
+    color: aliceblue;
+    padding: 1rem 0;
+    line-height: 1rem;
+    cursor: pointer;
+    transition: all linear .2s;
+
+}
+
+button:hover {
+    background-color: #09cda2;
+}
+
+textarea, input {
+    background-color: transparent;
+    border: unset;
+    font-size: 1.6rem;
+    margin-top: 10px;
+    padding: 5px;
+    resize: none;
+    outline: none;
+    color: inherit;
+}
+@media (max-width: 576px) {
+    h1 {
+        font-size: 4rem;
+    }
+}

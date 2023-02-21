@@ -1,0 +1,149 @@
+body {
+    background-color: brown;
+}
+
+h2 {
+    text-align: center;
+    font-size: 50px;
+}
+
+/* Le media query est une technique qui vise à changer le design d'un site internet selon les scaracteristique de l'écran du utilisé. C'est un élément important du CSS3. Pour le faire on utilise des requetes multimedia. Une requete multimedia permet d'appliquer des styles css en fonction de la presence ou de la valeur des caracteristiques de l'appareil. Les requetes multimedia peuvent s'appliquer de 2 façons:: 
+    -> en chargeant une feuille de style CSS differente: (pas recommandé) on essaye de centraliser notre css autour de notre feuille de style
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="petite_resolution.css" media="screen and (max-width:1280px)"/>
+    
+    -> En écrivant directement les regles dans la feuilles de style CSS: 
+    Cette technique consiste à utiliser ce qu'on appelle les regles css @: c'est les @rules fournit des instructions sur ce que le css doit effectuer ou comment il doit se comporter si une condition est satisfaite.
+    ici on utilise la @media: la regle pour inclure un bloc de proprietes css uniquement si une certaine condition est vrai.
+    
+    les types d'ecran ou les support d'affichage, il existe 4 categories de media types: 
+        -print: destiné a un support paginé, au document vus sur l'ecran en mode apercu avant impression
+        -screen: pour les appareil munis d'un écran: ordinateur, tablette, smartphone et tv
+        -speech: pour les lecteurs d'ecran qui lisent par synthese vocale
+        -all: toout les types d'appareils.
+    ->Les propriétés: c'est par exemple une largeur de la zone d'affichage, la hauteur de la zone d'affichage, l'orientation du peripherique*/
+
+
+    /* Pour les tres grand ecran (xx-large) superieur à 1400px */
+@media (min-width:1400px) {
+    /* la valeur de 1400 est appelée le breakpoint, ils servent à determiner a quel moment l'ecran change d'affichage */
+    body {
+        background-color: pink;
+    }
+    .xlarge, .large, .medium, .small, .xsmall {
+        display: none;
+    }
+
+}
+
+/* Pour les grands ecrans (ordinateurs de bureau) (x-large) soit les ecrans entre 1200 et 1399px */
+@media (min-width:1200px) and (max-width:1399.99px) {
+    body {
+        background-color: teal;
+        color: white;
+    }
+
+    .xxlarge, .large, .medium, .small, .xsmall {
+        display: none;
+    }
+}
+
+/*  Pour les ordinateurs de bureau avec ecran large soit les ecrans entre 992px et 1199px*/
+
+@media (min-width:992px) and (max-width:1199px) {
+    body {
+        background-color: khaki;
+        color: white;
+    }
+
+    .xxlarge, .xlarge, .medium, .small, .xsmall {
+        display: none;
+    }
+}
+
+/* pour les ecrans en medium soit de 768px a 991px */
+@media (min-width:768px) and (max-width:991px) {
+    body {
+        background-color: purple;
+        color: white;
+    }
+
+    .xxlarge, .large, .large, .small, .xsmall {
+        display: none;
+    }
+}
+
+/* Pour les petits appareil en small soit entre 576px et 767px */
+
+@media (min-width:576px) and (max-width:767px) {
+    body {
+        background-color: orange;
+        color: white;
+    }
+
+    .xxlarge, .xlarge, .large, .medium, .xsmall {
+        display: none;
+    }
+}
+
+
+/* Pour les trés petit appareil en xsmall soit en dessous de 575px */
+
+@media (max-width:575px) {
+    body {
+        background-color: green;
+        color: white;
+    }
+
+    .xxlarge, .xlarge, .large, .small {
+        display: none;
+    }
+}
+
+/* ************************************************************************************************************************************************************************************* */
+
+
+/* sur les ecrans et avec une largeur maximum de 1280px */
+
+@media screen and (min-width:767px) and (max-width:1280px) {
+
+}
+
+
+
+
+/* On rajoute only afin d'appliquer un style uniquement si l'integralité de la requete est verifiée. Il permet d'empecher les anciens navigateurs qui ne prennent pas en charge les requetes media avec les caracteristiques media, d'appliquer les styles concernées */
+
+@media only screen and (min-width:767px) and (max-width:1280px) {
+    
+}
+
+/* En mode impression */
+
+@media print {
+
+}
+
+/* Sur ecran tv */
+
+@media tv {
+
+}
+
+/* Sur tout les types d'ecrans */
+
+@media all and (min-width:767px) and (max-width:1280px) {
+
+}
+
+/* Sur tout les types s'écrans orienté verticalement */
+
+@media all and (orientation:portrait) {
+
+}
+
+/* Sur tout les types s'écrans orienté horizontalement */
+
+@media all and (orientation:landscape) {
+
+}

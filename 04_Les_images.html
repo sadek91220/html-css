@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sadek Sebihi: Les balises d'images HTML">
+    <meta name="author" content="Sadek Sebihi">
+    <link rel="stylesheet" type="text/css" href="css/04_Les_images.css">
+    <title>Les images en html</title>
+</head>
+<body>
+        <h1>Les images</h1>
+<!-- la balise pour inserer une image c'est la balise <img>, c'est une balise orpheline, elle est toujours accompagné de 
+    -l'attribut "src" qui indique la source de l'image, 
+    -l'attribut "alt" pour integrer la description de l'image, ce texte sera affiché a la place de l'image si celle ci ne peut etre chargé sur la page ou dans les navigateurs pour personne handicapé -->
+
+    <section>
+        <h2 style="color: aquamarine; text-transform: uppercase; font-style: italic;">Images insérées en html</h2>
+        <img src="IMG/image1.jpg" alt="image d'un chat qui joue">
+<!-- dans src j'ecris le chemin relatif (la source) de l'image -->
+        <img src="https://i.notretemps.com/1400x787/smart/2021/05/03/trois-facons-de-distraire-votre-chat-a-la-maison.jpeg" alt="un chaton tout mignon" height="500" width="800">
+<!-- on peut aussi mettre un lien absolu (url) -->
+        <img src="img/image2.jpg" alt="un chaton gris aux yeux bleus" title="un chaton gris aux yeux bleus">
+<!-- on peut ajouter un infobulle avec l'attribut title -->
+
+    </section>
+
+    <section>
+        <h2>Les figures</h2>
+<!-- les figures sont des elements qui viennent enrichir le texte pour completer les information sur l'image -->
+<!-- les figures sont accompagnés d'une legende. Pour ajouter une legende il faut utiliser la balise <figcaption> a l'interieur de la balise <figure> -->
+            <figure>
+                <img src="img/image3.jpg" alt="image d'un chat mignon">
+                <figcaption> Le chat siamois est sans nul doute le plus connu des chats domestique; son elegance et son caractere a part en font un compagnon aux qualitées nombreuses</figcaption>
+
+            </figure>
+
+
+
+    </section>
+
+    <section class="imageFond">
+<!-- toujours en minuscule avec une majuscule pour chaque nouveau mot -->
+        <h2>Les images de fond en css</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam aliquid at quod ipsum qui alias illo unde, tempora eaque vitae eius ea voluptas recusandae, totam repudiandae officia eum pariatur adipisci.
+        Non dolor voluptas eos autem incidunt quis ut placeat provident, accusamus, nemo consequatur at dolorem expedita illum veritatis distinctio quae rerum perspiciatis sed deleniti. Aut praesentium animi rem vitae? Recusandae.
+        Magni repellat, obcaecati ullam, doloribus cum sit dolorem quisquam delectus magnam perspiciatis dolore aperiam distinctio ut? Nihil quia, perferendis placeat atque doloremque natus ut voluptatum quam iusto, culpa, architecto accusamus!</p>
+
+    </section>
+
+    <section>
+        <h2>Image avec une animation en css</h2>
+        <img src="IMG/cheval3.jpg" alt="Des chevaux au soleil" class="image">
+        <img src="IMG/cheval3.jpg" alt="Des chevaux au soleil" class="image rotation360">
+        <img src="IMG/cheval3.jpg" alt="Des chevaux au soleil" class="image rotation360 test">
+
+
+
+    </section>
+
+    <section>
+        <img src="IMG/cheval3.jpg" alt="des chevaux au soleil" class="imgcheval">
+        <img src="IMG/cheval3.jpg" alt="des chevaux au soleil" class="imgcheval">
+        <img src="IMG/cheval3.jpg" alt="des chevaux au soleil" class="imgcheval">
+    
+    </section>
+
+
+</body>
+</html>
+
+<!-- raccourcis section>h2+img+img -->

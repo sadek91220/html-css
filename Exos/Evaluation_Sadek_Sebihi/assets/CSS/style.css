@@ -1,0 +1,331 @@
+:root {
+    font-size: 62.5%;
+}
+*{  
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    
+}
+
+body {
+    background-color: #1C1C1C;
+    width: 100%;
+    font-family: 'Arimo', sans-serif;
+    font-weight: bold;
+}
+
+header {
+    background-image: url(../img/background.jpg);
+    height: 20rem;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1.5rem 20rem 2rem 20rem;
+    
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+h1 {
+    font-size: 2rem;
+    text-align: left;
+}
+
+h1 span {
+    color: #EA9F06;
+}
+
+header .logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 17rem;
+    padding: 1rem;
+}
+
+header .headerleft {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: end;
+    height: 17rem;
+    width: 30%;
+    padding: 1rem;
+}
+
+header h2 {
+    font-size: 2.3rem;
+    justify-content: flex-end;
+    margin-top: 2rem;
+}
+
+header nav {
+    width: 100%;
+    
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 1.5rem;
+}
+/* fin du style du header */
+/* debut du style du main */
+
+.container {
+    background-image: url(../img/background.jpg);
+    width: 60%;
+    height: 105rem;
+    margin: auto;
+    padding: 2rem;
+    justify-content: space-around;
+    
+}
+
+.boxeurs {
+    width: 60%;
+    padding-top: 2rem;
+    margin: 0 20%;
+}
+
+.sectmain {
+    width: 50%;
+    
+}
+
+.art1 {
+    position: relative;
+    width: 100%;
+}
+
+.art1 img {
+    width: 80%;
+}
+
+
+.reduc {
+    position: absolute;
+    top: 2rem;
+    left: 29rem;
+    background-color: #292929;
+    color: #EA9F06;
+    border-radius: 10px;
+    font-size: 2.5rem;
+    width: 20%;
+    height: 12%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+h3 {
+    position: absolute;
+    bottom: 15%;
+    left: 12%;
+    font-size: 1.8rem;
+    font-weight: lighter;
+    text-align: center;
+}
+
+.art2 {
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    padding: 1rem;
+    
+}
+
+.art2 button {
+    background: linear-gradient(#9A9A9A,#363636);
+    width: 15rem;
+    color: #fff;
+    
+}
+
+.art2 p {
+    font-size: 3rem;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.art2 p :first-child {
+    text-decoration: line-through;
+}
+
+.art2 p :last-child {
+    color: #EA9F06;
+}
+
+footer {
+    width: 100%;
+    background-color: #373737;
+    position: relative;
+    height: 35rem;
+}
+
+footer section nav {
+    border-radius: 10px;
+    background-color: #fff;
+    width: 35%;
+    height: 5rem;
+    position: absolute;
+    top: -1.5rem;
+    left: 50rem;
+    padding: 1rem 2rem;
+}
+
+footer section nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer section nav a {
+    font-size: 1.5rem;
+    color: #212121;
+    font-weight: lighter;
+}
+
+footer section nav p {
+    font-size: 5rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+    bottom: 1.5rem;
+}
+
+footer .footerdiv {
+    display: flex;
+    height: 25rem;
+    align-items: center;
+    justify-content: space-around;
+    width: 60%;
+    margin: auto;
+    
+}
+
+.footerdiv div {
+    text-align: center;
+    color: #fff;
+    padding: 2.5rem;
+    border-bottom: 2px solid#9A9A9A;
+}
+
+.footerdiv div img {
+    padding: 1.5rem;
+}
+
+.footercontact {
+    display: flex;
+    justify-content: center;
+}
+
+.footercontact a {
+    padding: 2rem;
+}
+
+footer :last-child {
+    text-align: center;
+    color: #fff;
+    font-weight: lighter;
+}
+
+/* tout les hover */
+
+button:hover {
+    background: #EA9F06;
+}
+
+a:hover {
+    color: #EA9F06;
+}
+
+.footercontact img:hover {
+    opacity: 0.5;
+}
+
+/* media queries */
+
+@media (max-width:575.99px) {
+    .col-xs-1 {
+        width: 8.333333%;
+    }
+    .col-xs-2 {
+        width: 16.333333%;
+    }
+    .col-xs-3 {
+        width: 25%;
+    }
+    .col-xs-4 {
+        width: 33.333333%;
+    }
+    .col-xs-5 {
+        width: 41.666666%;
+    }
+    .col-xs-6 {
+        width: 50%;
+    }
+    .col-xs-7 {
+        width: 58.333333%;
+    }
+    .col-xs-8 {
+        width: 66.666666%;
+    }
+    .col-xs-9 {
+        width: 75%;
+    }
+    .col-xs-10 {
+        width: 83.333333%;
+    }
+    .col-xs-11 {
+        width: 91.666666%;
+    }
+    .col-xs-12 {
+        width: 100%;
+    }
+
+    header {
+        height: 35rem;
+        
+    }
+    header h1 {
+        text-align: center;
+    }
+
+    header nav ul{
+        width: 10%;
+    }
+
+    .container {
+        width: 100%;
+        height: 200rem;
+    }
+    main img {
+        width: 100%;
+    }
+    .sectmain {
+        width: 100%;
+    }
+
+    footer {
+        width: 100%;
+    }
+
+    .footerdiv div {
+        width: 50%;
+    }
+
+    footer section nav{
+        width: 100%;
+        position: relative;
+        left: 5%;
+    }
+   
+}

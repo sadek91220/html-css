@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Sebihi sadek">
+    <meta name="description" content="Les tableaux">
+    <link rel="stylesheet" href="css/07_Les_tableaux.css">
+    <title>Les tableaux</title>
+</head>
+
+<body>
+    <h1>Un tableau, pour les données "tabulaires"</h1>
+<!-- ouverture du tableau -->
+
+    <table>
+        <caption>Ventes de la semaine</caption>
+        
+<!-- caption => titre du tableau -->
+        <thead>
+<!-- thead => c'est l'en-tete du tableau -->
+            <tr>
+<!-- tr => table row, c'est les lignes du tableaux -->
+                <th>Jour</th>
+                <th>Smartphones</th>
+                <th>Tablettes</th>
+                <th>Ordinateurs</th>
+<!-- th => table head, c'est les en-tetes des colonnes--> 
+            </tr>
+        </thead>
+
+        <tbody>
+<!-- tbody c'est le corp du tableau -->
+<!-- raccourci: tr*5>td*4 -->
+            <tr>
+                <td>lundi</td>
+<!-- td => table data c'est les cellules de données, les colonnes-->
+                <td>10</td>
+                <td>5</td>
+                <td>12</td>
+            </tr>
+            <tr>
+                <td>mardi</td>
+                <td>15</td>
+                <td>8</td>
+                <td>26</td>
+
+            </tr>
+            <tr>
+                <td>jeudi</td>
+                <td>22</td>
+                <td>10</td>
+                <td>17</td>
+            </tr>
+            <tr>
+                <td>vendredi</td>
+                <td>12</td>
+                <td>10</td>
+                <td>8</td>
+
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+
+            </tr>
+        </tbody>
+        <tfoot>
+<!-- tfoot => table foot -->
+            <td>total</td>
+            <td>59</td>
+            <td>33</td>
+            <td>63</td>
+        </tfoot>
+
+    </table>
+    <br><br><br>
+
+    <h2>Rowspan / colspan</h2>
+<!-- Rowspan permet de declarer qu'une cellule du tableau va faire la taille du nombre precisé entre guillemets. Si on met un rowspan=5 alors notre cellule fera la taille de 5 cellules verticalement (en colonne), il faudra ensuite enlever le nombre de cellule td qui correspondent-->
+    <table>
+        <caption>Exemple de tableau avec <em>rowspan</em>:</caption>
+        <tr>
+            <td>Nom</td>
+            <td>Mozart</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Email</td>
+            <td>Mozart@gmail.com</td>
+
+        </tr>
+        <tr>
+            
+            <td>bestcomposer@free.fr</td>
+
+        </tr>
+
+    </table>
+
+    <table id="demoColspan">
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3"></td>
+            <td class="noir"></td>
+            <td colspan="3"></td>
+
+        </tr>
+        <tr>
+            <td colspan="2"></td>
+            <td colspan="3" class="noir"></td>
+            <td colspan="2"></td>
+            
+        </tr>
+        <tr>
+            <td></td>
+            <td colspan="5" class="noir"></td>
+            <td></td>
+
+
+        </tr>
+        <tr>
+            <td colspan="2"></td>
+            <td colspan="3" class="noir"></td>
+            <td colspan="2"></td>
+
+        </tr>
+        <tr>
+            <td colspan="3"></td>
+            <td class="noir"></td>
+            <td colspan="3"></td>
+
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        </table>
+        <br><br>
+    
+        <h3>Exercice:</h3>
+        <table id="demoColspan">
+            <tr>
+                <td></td>
+                <td colspan="2" class="noir"></td>
+                <td></td>
+                <td colspan="2" class="noir"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="5" class="noir"></td>
+
+                <td></td>
+            </tr>
+                <tr>
+                <td colspan="7" class="noir"></td>
+            </tr>
+            <tr>
+                    <td></td>
+                    <td colspan="5" class="noir"></td>
+                    <td></td>
+            </tr>
+            <tr>
+                <td colspan="2"></td>
+                <td colspan="3" class="noir"></td>
+                <td colspan="2"></td>
+            </tr>
+            <tr>
+                <td colspan="3"></td>
+                <td class="noir"></td>
+                <td colspan="3"></td>
+
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+
+        
+
+    </table>
+</body>
+</html>

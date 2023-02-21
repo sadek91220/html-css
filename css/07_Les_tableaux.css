@@ -1,0 +1,62 @@
+*{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body {
+    background-color: lightslategray;
+    width: 50%;
+/* largeur de la page 50% de la taille de l'ecran du navigateur */
+    margin: auto;
+/* marge interieure en auto */
+    padding-bottom: 300px;
+}
+
+h1{
+    text-align: center
+}
+
+caption {
+    color: #025870;
+    font-size: 22px;
+    padding: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+table {
+    text-align: center;
+    margin-top: 50px;
+    border: 2px solid;
+    border-collapse: collapse;
+    width: 90%;
+    background-color: grey;
+    transform: rotate(360deg);
+}
+
+th {
+    color: #02d8ec;
+    
+}
+th, td {
+    border: 1px solid rgba(8, 10, 10, 0.715);
+    padding: 10px;
+}
+
+thead, tfoot {
+    background-color: rgba(3, 138, 143, 0.34);
+}
+
+h2 {
+    text-align: center;
+    color: antiquewhite;
+    font-size: 30px;
+}
+
+#demoColspan td {
+    height: 30px;
+    width: 30px;
+}
+
+.noir {
+    background-color: black;
+}

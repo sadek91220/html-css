@@ -1,0 +1,57 @@
+section {
+    margin-top: 80px !important;
+    
+}
+
+section:first-child div:nth-child(1) {
+    background-image: url(../img/s1b1.jpeg);
+}
+
+section:first-child div:nth-child(2) {
+    background-image: url(../img/s1b2.jpeg);
+}
+
+section:first-child div:nth-child(3) {
+    background-image: url(../img/s1b3.jpeg);
+}
+
+section:first-child div {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    border-radius: 10px;
+    border: 1px solid rgba(225, 255, 255, .2);
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, .5);
+    transition: all linear .4s;
+}
+
+section:first-child div:hover {
+    scale: 1.1;
+}
+section:first-child div a {
+    margin: 80px;
+    background-color: rgba(0, 0, 0, .8);
+}
+section:nth-child(2) div img {
+    border: 1px solid rgba(225, 255, 255, .2);
+
+}
+
+section:nth-child(2) div h2 {
+    font-size: 5rem;
+}
+
+section:nth-child(2) div audio {
+    width: 60%;
+}
+
+section:nth-child(2) p {
+    line-height: 2rem;
+    font-size: 1.5rem;
+    padding: 20px;
+}
+
+section:last-child {
+    background-color: black;
+}

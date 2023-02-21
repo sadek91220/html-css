@@ -1,0 +1,15 @@
+/* Feuille de style */
+
+/* color -> couleur du texte */
+h1 {
+    color:rgb(75, 8, 138);
+}
+
+
+/*
+    Les valeurs possibles pour les couleurs:
+    - Notations hexadecimale: #ffffff (blanc)
+    - Notations RGB (de 0 à 255): 255 255 255
+    - Notations RGBA ( de 0 à 255, de 0 à 100 opacité): 255 255 255 10
+    -Notations avec des mots clés: red, green, blue..
+*/

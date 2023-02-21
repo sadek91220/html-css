@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sadek Sebihi: Page Float / position / body">
+    <meta name="author" content="Sadek Sebihi">
+    <link rel="stylesheet" type="text/css" href="css/08_Float.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="https://kit.fontawesome.com/ebec9ab177.js" crossorigin="anonymous"></script>  
+    <title>Float / position / zoning</title>
+    
+</head>
+<body>
+    <header id="banniere">
+        <h1>Float <span>/</span> Position <span>/</span> Zoning</h1>
+
+
+
+
+
+    </header>
+
+    <main>
+        <section>
+            <h2>1 - Float:</h2>
+            <div>
+                <h3>- Float 1:</h3>
+                <div class="carré alignement">1</div>
+                <div class="carré alignement">2</div>
+                <div class="carré alignement">3</div>
+                <div class="carré alignement">4</div>
+                <div class="carré alignement superpose">5</div>
+                <div class="carré alignement">6</div>
+                <div class="carré alignement">7</div>
+                <div class="carré alignement superpose">8</div>
+                <div class="carré alignement">9</div>
+                <div class="carré alignement superpose">10</div>
+                <div class="clear"></div>
+            </div>
+            <div>
+                <h3>- Exercice Float:</h3>
+                <div class="chat">1</div>
+                <div class="chat">2</div>
+                <div class="chat">3</div>
+                <div class="chat">4</div>
+
+                <div class="superpose"></div>
+
+                <div class="chat">5</div>
+                <div class="chat">6</div>
+                <div class="chat">7</div>
+                <div class="chat">8</div>
+
+                <div class="superpose"></div>
+
+
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente, iusto porro. Quasi, sapiente eius vitae recusandae nihil libero sunt aspernatur? Nemo repellendus id rerum illum harum eum aspernatur adipisci aut./p>
+            </div>
+            <div>
+                <h3>- Exercice de Float:</h3>
+                <div class="zone"></div>
+                <div class="zone1"></div>
+                <div class="zone2"></div>
+                <div class="zone3"></div>
+                <div class="zone4"></div>
+                <div class="zone superpose"></div>
+            </div>
+        </section>
+
+        <section>
+            <h2>2 - Position:</h2>
+            <div>
+                <h3>- Position absolute:</h3>
+                <div class="absolute">
+<!-- l'element de position absolute est positionné par rapport à son parent -->
+                    <p>Carré JAUNE</p>
+                </div>
+            </div>
+            <br><br>
+            <div>
+                <h3>- Position relative:</h3>
+                <div class="relative">
+                    <div></div>
+                </div>
+            </div>
+
+            <div>
+                <h3>- Image avec animation:</h3>
+                <figure class="blocPhotoSf">
+                    <img src="IMG/pontsf.jpg" alt="Image du pont de San Francisco">
+                    <figcaption class="photoSfLegende">
+                        <h5>Ma legende: Pont de San Francisco</h5>
+                    </figcaption>
+                </figure>
+            </div>
+
+            <div>
+                <h3>- Exercice Cupcake:</h3>
+                <div class="blocCupcake">
+                    <img src="IMG/cupcake.jpg" alt="Image d'un cupcake">
+                    <h4>Une image de cupcake</h4>
+                </div>
+                    
+            </div>
+
+            <div>
+                <h3>- Position fixed:</h3>
+                <!-- <p>Bouton retour vers le haut de la page</p> -->
+                <div>
+                    <a href="#" class="btnRetour">
+                        <span class="material-symbols-outlined">arrow_circle_up </span>
+                    </a>
+                    <a href="#basDePage"><i class="fa-solid fa-circle-arrow-down"></i></a>
+                </div>
+
+
+
+            </div>
+
+            <div class="positionnement">
+                <h3>- Position avec z-index</h3>
+                <div class="rela">
+                    <div class="rouge">Red</div>
+                    <div class="vert">Green</div>
+                    <div class="bleu"></div>
+                </div>
+            </div>
+
+
+
+        </section>
+        <br><hr><br><br>
+
+        <section class="zoning">
+            <h2>3 - Zoning:</h2>
+            <div id="zoning1">
+                <h3>- Zoning n°1</h3>
+                <header>
+                    <p>Ici le zoning 1</p>
+                </header>
+                <aside>
+                    <p>Zone de gauche</p>
+                </aside>
+                <section>
+                    <p>Zone de droite</p>
+                </section>
+                <div class="superpose"></div>
+            </div>
+            
+            <hr>
+            <br>
+
+            <div id="zoning2">
+                <h3>Zoning n°2:</h3>
+                <header>
+                    <p>Zone de header</p>
+                </header>
+                <aside>
+                    <p>Zone de gauche</p>
+                </aside>
+                <div class="zoneDuMilieu">
+                    <p>Zone du milieu</p>
+                </div>
+                <aside>
+                    <p>Zone de droite</p>
+                </aside>
+                <div class="superpose"></div>
+
+            </div>
+            <br>
+            <hr>
+            <br>
+
+            <div id="zoning3">
+                <h3>Zoning 3</h3>
+                <header>
+                    <div class="header">Haut 1 <br>DIV</div>
+                    <div class="header2">Haut 2 <br>DIV</div>
+                    <div class="header">Haut 3 <br>DIV</div>
+                </header>
+                <div class="superpose"></div>
+                <nav>Menu <br>NAV</nav>
+                <aside>
+                    <p>Zone de Gauche <br> Aside</p>
+                </aside>
+
+                <div class="aDiv">A <br>DIV</div>
+                <div class="bDiv">B <br>DIV</div>
+
+                <section>Slideshow, Diaporama, Section</section>
+
+                <div class="cediv">C <br>DIV</div>
+                <div class="dfdiv">D <br>DIV</div>
+                <div class="cediv">E <br>DIV</div>
+                <div class="dfdiv">F <br>DIV</div>
+                
+                
+            </div>
+            <br>
+            <hr>
+            <br>
+
+            <div id="zoning4">
+                <h3>Zoning 4</h3>
+                <header>
+                    <p>Header</p>
+                </header>
+                <nav>
+                    <p>nav</p>
+                </nav>
+                
+                <div class="z1">Zone 1</div>
+                <div class="z2">Zone 2</div>
+                <div class="z2">Zone 3</div>
+                <div class="z1">Zone 4</div>
+                
+                <footer>footer</footer>
+            <br>
+
+            </div>
+        </section>
+
+       
+
+
+        <br><hr>
+    </main>
+    <footer>
+        <a id="basDePage"></a>
+        
+
+    </footer>
+    
+    
+</body>
+</html>

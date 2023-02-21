@@ -1,0 +1,475 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+/* box-sizing: border-box permet aux bordures d'etre directement dans l'element, de s'ajuster, il n'ajoute pas de pixel en plus */
+}
+
+
+body {
+    /* background-color: aquamarine; */
+    background-image: url(../IMG/concrete-texture.png);
+    z-index: -2;
+
+}
+#banniere {
+    background-color: #4d2479;
+    border: 4px solid #f8d771;
+    position: fixed;
+    width: 100%;
+    z-index: 4;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    padding: 50px 0;
+}
+
+h1 span {
+    color: blueviolet;
+    font-weight: bolder;
+}
+main {
+    background-color: rgba(248, 230, 141, 0.753);
+    border: 4px solid #4d2479;
+    width: 80%;
+    margin: 0 auto;
+    padding: 100px 0;
+
+}
+
+section {
+    margin: 70px;
+}
+
+h2 {
+    color: #730092;
+    font-size: 50px;
+    font-style: italic;
+    font-weight: bolder;
+    padding: 30px;
+    border: 3px solid #4d2479;
+    text-decoration: underline;
+    
+}
+
+.carré {
+    height: 170px;
+    width: 170px;
+    background-color: #f8d771;
+    margin: 10px;
+    text-align: center;
+    font-size: 22px;
+    color: #004445;
+    border: 2px solid darkred;
+    line-height: 170px;
+
+
+}
+
+.alignement {
+    float: left;
+/* float permet de changer la disposition des blocs (div) en créant un effet flottant */
+}
+
+.superpose {
+    clear: both;
+}
+
+.clear {
+    clear: both;
+}
+
+.chat {
+    background-image: url(/IMG/image1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    width: 450px;
+    border: 5px solid #fff;
+    float: left;
+}
+
+.absolute {
+    background-color: orange;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 30%;
+    top: 350%;
+    text-align: center;
+    line-height: 100px;
+}
+/*  un element en position absolute va se positionné par rapport a son parent, si aucun parent n'est indiqué il se positionnera par rapport a la balise html (balise racine)*/
+
+
+.zone {
+    background-color: orchid;
+    height: 170px;
+}
+
+.zone1,.zone2,.zone3,.zone4 {
+    height: 250px;
+    width: 25%;
+    float: left;
+    border: 1px solid white;
+}
+
+.zone1, .zone3 {
+    background-color: #6a7a78;
+}
+
+.zone2, .zone4 {
+    background-color: #004445;
+}
+
+.relative {
+    background-color: #004445;
+    width: 400px;
+    height: 400px;
+    position: relative;
+}
+
+h3 {
+    font-size: 25px;
+    font-style: italic;
+    color: #004445;
+    padding: 25px;
+}
+
+.relative div {
+    background-color: orangered;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.blocPhotoSf {
+    width: 400px;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.blocPhotoSf img {
+    width: 100%;
+}
+
+.blocPhotoSf .photoSfLegende {
+    background-color: rgba(0, 0, 0, .75);
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    color: #fff;
+    font-weight: bolder;
+    position: absolute;
+    width: 100%;
+    bottom: --90px;
+    transition: 1s;
+}
+
+.blocPhotoSf:hover .photoSfLegende {
+    bottom: 0;
+}
+
+.blocCupcake {
+    width: 500px;
+    position: relative;
+    border: 5px solid white;
+}
+
+.blocCupcake img {
+    width: 100%;
+    padding: 0px;
+}
+
+.blocCupcake h4 {
+    background-color: rgba(0, 0, 0, .75);
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    color: whitesmoke;
+    font-weight: bolder;
+    position: absolute;
+    bottom: 150px;
+    width: 100%;
+}
+
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 600,
+  'GRAD' 0,
+  'opsz' 48;
+  color: rgb(130, 7, 232);
+  font-size: 50px !important;
+}
+
+.btnRetour {
+    position: fixed;
+    bottom: 40px;
+    right: 50px;
+}
+
+.material-symbols-outlined:hover {
+    color: #f8d771;
+}
+
+.fa-circle-arrow-down {
+    font-size: 40px !important;
+    position: fixed;
+    bottom: 40px;
+    right: 100px;
+}
+
+.fa-circle-arrow-down:hover {
+    color: #f8d771;
+}
+
+.rouge, .vert, .bleu {
+    width: 100px;
+    height: 100px;
+    color: #fff;
+    line-height: 100px;
+    text-align: center;
+    font-weight: bolder;
+    position: absolute;
+}
+
+.rela {
+    position: relative;
+}
+.rouge {
+    background-color: #a62946;
+    z-index: 3;
+    top: 20px;
+    left: 20px;
+}
+
+.vert {
+    background-color: chartreuse;
+    z-index: 2;
+    top: 40px;
+    left: 40px;
+}
+
+.bleu {
+    background-color: blue;
+    z-index: 1;
+    top: 60px;
+    left: 60px;
+}
+
+.zoning>div {
+    margin: 20px auto;
+}
+
+#zoning1 {
+    background-color: #ffd6d6;
+    border: 1px solid white;
+    width: 798px;
+    text-align: center;
+    color:#fff;
+    overflow: hidden;
+}
+
+#zoning1 header {
+    background-color: #f8d771;
+    height: 70px;
+    color: #fff;
+}
+#zoning1 aside {
+    background-color: #004445;
+    height: 525px;
+    width: 20%;
+    color: white;
+    float: left;
+}
+
+#zoning1 section {
+    background-color: #0c0045;
+    height: 525px;
+    width: 80%;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    float: left;
+}
+
+#zoning2 {
+    background-color: #ffd6d6;
+    border: 1px solid white;
+    width: 798px;
+    margin: auto;
+    text-align: center;
+    color:#fff;
+    overflow: hidden;
+}
+
+#zoning2 header {
+    background-color: #f8d771;
+    height: 70px;
+    color: #fff;
+    line-height: 70px;
+    border: 1px solid white;
+}
+#zoning2 aside {
+    background-color: #004445;
+    height: 525px;
+    width: 20%;
+    color: white;
+    float: left;
+    line-height: 450px;
+}
+
+#zoning2 .zoneDuMilieu {
+    background-color: #0c0045;
+    height: 525px;
+    width: 60%;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    float: left;
+    line-height: 450px;
+}
+
+#zoning3 {
+    width: 800px;
+    background-color: #ffd6d6;
+    border: 1px solid white;
+    height: 960px;
+    margin: auto;
+    text-align: center;
+    color:#fff;
+    overflow: hidden;
+}
+
+#zoning3 header {
+    background-color: #f8d771;
+    height: 70px;
+    color: #fff;
+    line-height: 70px;
+    border: 1px solid white;
+}
+#zoning3 .header {
+    width: 25%;
+    float: left;
+    background-color: #33218e;
+    height: 180px;
+    
+}
+#zoning3 .header2 {
+    width: 50%;
+    float: left;
+    background-color: #0c0045;
+    height: 180px;
+    
+}
+
+#zoning3 nav {
+    height: 80px;
+    background-color: #0c4d4e;
+    width: 100%;
+    overflow: hidden;
+}
+
+#zoning3 aside {
+    background-color: #004445;
+    height: 700px;
+    width: 25%;
+    color: white;
+    float: left;
+    margin: 0;
+    
+}
+
+#zoning3 .aDiv {
+    background-color: #6a7a78;
+    height: 250px;
+    width: 37.5%;
+    float: left;
+}
+
+#zoning3 .bDiv {
+    background-color: #0f8777;
+    height: 250px;
+    width: 37.5%;
+    float: left;
+}
+
+#zoning3 section {
+    background-color: #284b4c;
+    height: 200px;
+    width: 75%;
+    overflow: hidden;
+    margin: 0;
+}
+
+#zoning3 .cediv {
+    background-color: #0c0045;
+    width: 18.75%;
+    height: 250px;
+    float: left;
+    margin: auto;
+}
+
+#zoning3 .dfdiv {
+    background-color: #3b316f;
+    width: 18.75%;
+    height: 250px;
+    float: left;
+    margin: auto;
+}
+
+#zoning4 {
+    width: 800px;
+    background-color: #ffd6d6;
+    border: 1px solid white;
+    height: 680px;
+    margin: auto;
+    text-align: center;
+    color:#fff;
+    overflow: hidden;
+}
+
+
+#zoning4 header {
+    background-color: #0c4d4e;
+    width: 100%;
+    height: 80px;
+}
+
+#zoning4 nav {
+    background-color: #7cc1c2;
+    width: 100%;
+    height: 80px;
+}
+
+
+#zoning4 .z1 {
+    background-color: #f8d771;
+    width: 50%;
+    height: 180px;
+    float: left;
+}
+
+ #zoning4 .z2 {
+    background-color: #efb918;
+    width: 50%;
+    height: 180px;
+    float: left;
+    
+}
+
+#zoning4 footer {
+    background-color: #21babc;
+    width: 100%;
+    height: 80px;
+    float: left;
+
+}
+

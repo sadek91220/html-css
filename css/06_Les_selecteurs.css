@@ -1,0 +1,149 @@
+body {
+    background-color: rgb(196, 226, 216);
+    font-size: 18px;
+}
+h1 {
+    color: rgb(103, 7, 158);
+}
+section {
+    background-color: rgb(121, 156, 164);
+    width: 50%;
+    padding: 10px;
+}
+section p {
+    color: rgb(186, 217, 245);
+}
+section :first-child {
+/* first-child indique le premier enfant, premiere ligne, ici c'est le h2 */
+    color: rgb(75, 2, 107);
+}
+section div :nth-child(3) {
+/* la pseudo classe :nth-child permet d'acceder a un element depuis son numero dans la section*/
+    color: rgb(137, 221, 250);
+    font-weight: bolder;
+}
+div p:nth-child(even) {
+/* even pour les indices pairs */
+    background-color: rgb(105, 136, 139);
+}
+div p:nth-child(odd) {
+/* odd pour les indices impairs */
+    background-color: rgb(66, 102, 116);
+}
+div p:nth-child(3), div p:nth-child(6) {
+    text-transform: uppercase;
+}
+section div p:last-child {
+    color: rgb(45, 238, 174);
+}
+
+section.select p {
+/* pour rappeller la classe il faut mettre .select (.nomdelaclasse) */
+    color: crimson;
+}
+
+section.select p:first-of-type , section.select p:last-of-type {
+/* first-of-type pour le premier du type (ici le premier du type p)
+   last-of-type pour le dernier du type (ici le dernier du type p ) */
+    color: greenyellow;
+}
+
+section.select p:nth-of-type(3) {
+    background-color: darkgrey ;
+}
+
+section.select div {
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-style: italic;
+    background-color: lightsteelblue;
+    padding-left: 50px;
+}
+
+section div:not(.zoneA) {
+/* . pour rappeller une classe */
+    color: deeppink;
+    font-weight: lighter;
+}
+
+section div.zoneA {
+    color: aliceblue;
+}
+/* ou */
+section.select div.zoneA {
+    color: aliceblue;
+}
+
+#zoneC {
+/* # pour rappeller une id */
+    color: rgb(64, 10, 227);
+}
+
+#zoneD span {
+    color: rgb(0, 255, 247);
+}
+
+
+#zone1 h3, #zone1 p{
+    background-color: rgb(170, 115, 222);
+    margin-top: 20px;
+    height: 150px;
+    color: black;
+}
+
+#zone1::before {
+    content: "Rajouté avant la zone 1";
+    color: azure;
+}
+
+#zone1::after {
+    content: "Rajouté après la zone 1";
+    color: antiquewhite;
+}
+/* On ajoute du contenu (content) avant l'id avec before et on ajoute apres l'id avec after */
+/* before et after sont des pseudo-éléments permettant de generer une interpretation dans le css */
+
+p.psde {
+    color: lightcyan;
+}
+
+p.psde span {
+    position: relative;
+}
+p.psde span::before {
+    content: "👑";
+    position: absolute;
+    top: -15px;
+    left: -11px;
+    transform: rotate(-30deg);
+}
+/* absolute bouge autour de relative */
+
+h4 + p {
+    color: rgb(76, 0, 255);
+}
+/* +p selectionne la premiere balise du h4, doit ETRE AU MEME NIVEAU*/
+h4 ~a {
+    background-color: rgb(81, 232, 206);
+}
+/* ~ selectionne toutes les balises du h4  */
+
+ul > li {
+    list-style-type: square;
+    color: indianred;
+}
+/* selectionne tout les elements li qui sont directement sous un élément ul */
+
+a[title] {
+    background-color: mediumslateblue;
+}
+/* selectionne tout les "a" qui ont un attribut title */
+
+a[title="Cliquez ici"] {
+    text-decoration: none;
+}
+
+*{
+
+}
+ /* "*" c'est pour selectionner tout les éléments dans la page (tout ce qu'il y a dans body) */

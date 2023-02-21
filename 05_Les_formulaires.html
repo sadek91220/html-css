@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sadek Sebihi: Les formulaires">
+    <meta name="author" content="Sadek Sebihi">
+    <link rel="stylesheet" type="text/css" href="css/05_Les_formulaires.css">
+
+    <title>Les formulaires</title>
+</head>
+
+<body>
+    <h1>Mon premier formulaire html:</h1>
+<!-- les formulaires sert a recuperer des données que l'utilisateur va entrer et les envoyer au server pour un traitement (en PHP par exemple), les formulaire de login, formulaire de contact -->
+<!-- on declare un formulaire avec la balise <form> elle permet d'indiquer le debut d'un formulaire, quasiment tout le temp utilisé (inscription a un site, ajout d'un article, une newsletter) -->
+<!-- Cette balise fonctionne avec deux attributs essentiel:
+    -action: permet d'indiquer où on recupere les données envoyés par l'utilisateur, indique l'adresse de la page ou du fichier qui va traiter les informations envoyé par le formulaire.
+    -method: permet d'indiquer si on recupere des données ou si on les envoi. Exemple: lorsqu'on s'insrit sur un site on envois les données vers la bae de données. Lorsqu'on se connecte on recupere et verifiedes données qui se trouve dans une BDD (base de données)
+2 methodes:
+    -method="get": informations passées dans la barre d'adresse
+    -method="post": envoi les données dans le corp de la requete sans passer par la barre d'adresse. methode la plus utilisée  -->
+
+    <form action="#" method="post" enctype="multipart/form-data">
+<!-- enctype est utilisé quand on a un champ d'envoi de fichiers -->
+        <fieldset>
+<!-- Fieldset permet d'assembler plusieurs elements de notre formulaire -->
+            <legend>Nom et Prénom:</legend>
+            <label for="nom">Nom:</label>
+<!-- Label permet de definir l'etiquette du champs, elle permet de definir l'information attendu -->
+            <input type="text" id="nom" name="nom" placeholder="Votre nom de famille" required>
+<!-- Input est un element qui permet la saisie d'information, son apparence repose sur la valeur de l'attribut "type" qui l'accompagne, bien penser a ajouter les attribut "id" et "name" qui auront la meme valeur que l'attribut "for" du label-->
+<!-- L'input avec "type=text" est en forme monoligne
+        -name-> pour recuperer la valeur en PHP(pas d'espace ni accnt ni caracteres speciaux)
+        -required -> indique que le champs est obligatoire, c'est un attribut particulier qui n'a pas de valeur 
+        -placeholder -> permet d'indidiquer a l'utilisateur l'information attendu 
+        -maxlength -> permet de definir le nombre maximum de caracteres --> 
+            <label for="prenom">Prénom:</label>
+            <input type="text" id="prenom" name="prenom" placeholder="Votre prénom" maxlength="15">
+        </fieldset>
+        <br>
+
+            <div>
+                <label for="dateDeNaissance" >Date de naissance:</label>
+                <input type="date" id="dateDeNaissance" name="dateDeNaissance">
+<!-- type date -> permet d'afficher un calendrier pour indiquer une date -->
+            </div>
+        <br>
+        <fieldset>
+            <div>
+                <label for="age">Votre age:</label>
+                <input type="number" id="age" name="age" min="18" max="100">
+<!-- type number permet d'entrer seulement un nombre, on peut definir le minimum et le maximum avec l'attribut min et max -->
+
+
+            </div>
+        <br>
+
+            <div>
+                <input type="radio" id="moinsDe15Ans" name="age" value="moinsDe15Ans" checked>
+                <label for="moinsDe15Ans">Moins de 15ans:</label>
+<!-- Le champs avec un bouton radio, un seul peut etre coché avec ce bouton, naturellement celui qui a l'attribut checked sera coché d'office -->
+            
+
+            </div>
+        
+            <div>
+                <input type="radio" id="medium15-25" name="age" value="medium15-25">
+                <label for="medium15-25">15-25ans:</label>
+            
+
+            </div>
+        
+            <div>
+                <input type="radio" id="medium25-40" name="age" value="medium25-40">
+                <label for="medium25-40">25-40ans:</label>
+            
+
+                </div>
+
+                <div>
+                    <input type="radio" id="plusDe40" name="age" value="plusDe40">
+                    <label for="plusDe40">Plus de 40ans:</label>
+            
+
+            </div>
+    </fieldset>
+        <br>
+    <fieldset>
+            <div>
+                <label for="pseudo">Pseudonyme:</label>
+                <input type="text" id="Pseudo" name="Pseudo" placeholder="Choisissez un pseudo" required>
+            </div>
+
+            <div>
+                <label for="motDePasse">Mot de passe:</label>
+                <input type="password" id="motDePasse" name="motDePasse" placeholder="Votre mot de passe" required>
+<!-- Le type password permet de masquer un mot de passe -->
+            </div>
+    </fieldset>
+        <br>    
+    <fieldset>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Votre email" required>
+<!-- Le type email permet a l'utilisateur de saisir son adresse, la valeur sera automatiquement validée et verifiée -->
+            </div>
+
+            <div>
+
+                <label for="telephone">Téléphone:</label>
+                <input type="tel" id="telephone" name="telephone" pattern="^[0-9]{10}$" placeholder="Votre numero de telephone" required>
+<!-- Le type tel permet de faire afficher le clavier chiffré pour les smartphones,
+    -les pattern -> une expression rationnelle a laquelle doit correspondre le texte saisie pour etre validé -->
+            </div>
+    </fieldset>
+            <br>
+
+    <fieldset>
+            <div>
+
+                <label for="photo">Photographie:</label>
+
+                <input type="file" id="photo" name="photo">
+<!-- le type file permet d'uploader un fichier -->
+            </div>
+    </fieldset>
+            <br>
+            <div>
+                <label for="pays">Vous residez en </label>
+                <select name="pays" id="pays">
+<!-- la balise select indique le debut et la fin de la liste deroulante -->
+                    <optgroup label="Europe">
+<!-- optgroup est une balise pour grouper les differentes options du menu deroulant -->
+                        <option value="france">France</option>
+                        <option value="espagne">Espagne</option>
+                        <option value="italie">Italie</option>
+                        <option value="allemagne">Allemagne</option>
+                    </optgroup>
+
+                    <optgroup label="Amerique">
+                        <option value="canada">Canada</option>
+                        <option value="etats unis">Etats Unis</option>
+                    </optgroup>
+
+                    <optgroup label="Asie">
+                        <option value="japon">Japon</option>
+                        <option value="chine">Chine</option>
+                    </optgroup>
+
+
+
+                </select>
+            </div>
+            <br>
+        <fieldset>
+            <div>
+                <label for="">Choisissez votre destination:</label> 
+                <div>
+                    <input type="checkbox" name="question" value="chine"> en chine?
+                    <input type="checkbox" name="question" value="autriche" checked> en autriche?
+                    <input type="checkbox" name="question" value="mars"> sur Mars ?
+                </div> 
+    <!-- checkbox-> case a cocher, elles peuvent tooutes etre cochées par defaut, il faut mettre checked pour cocher une case par defaut -->
+            </div>
+        </fieldset>
+        <br>
+        <fieldset>
+            <div>
+                <label for="Commentaires">Avez vous une précision à apporter?</label>
+                <br>
+                <textarea name="Commentaires" id="Commentaires" cols="60" rows="10"></textarea>
+            </div>
+<!-- textarea est la balise pour faire un commentaire, zone de texte multi-ligne, row c'est le nombre de ligne et cols c'est le nombre de colonnes-->
+
+
+        </fieldset>
+        <br>
+
+            <div>
+
+                <label for="Inscription">Inscription</label>
+                <input type="submit" id="inscription" name="Inscription" value="S'inscrire">
+<!-- submit c'est pour envoyer le formulaire -->
+                <input type="reset" name="annuler" value="effacer">
+<!-- reset c'est pour reinitialiser le formulaire -->
+            <input type="button" value="bouton inactif" disabled>
+<!-- l'attribut disabled pour desactiver un element(marche avec javascript) -->
+
+<!-- il existe d'autres types d'input:
+        -type="url" => saisir une adresse absolue
+        -type="color" => saisir une couleur
+        -type="search" => créer un champ de recherche
+    - Differents types de champs de selection de date existent: 
+        date: pour la date (05/08/2023)
+        time: pour l'heure (13:37)
+        week: pour la semaine
+        month: pour le mois
+        datetime: (le plus utilisé) pour la date et l'heure avec gestion des decalages horaire
+        datetime-local: pour la date et l'heure sans les decalages horaire
+-->
+            </div>
+
+
+    </form>
+</body>
+</html>

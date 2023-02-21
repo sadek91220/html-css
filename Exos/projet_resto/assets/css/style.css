@@ -1,0 +1,251 @@
+body {
+    
+    background-color: rgb(155, 207, 191) ;
+}
+
+#container {
+    background-image: url(../img/planches.jpg);
+    width: 60%;
+    margin: 0 20%;
+    height: 28rem;
+    font-family: 'Secular One', sans-serif;
+    
+}
+
+h1 {
+    font-style: italic;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    margin: 17px 10px 0 25px;
+    position: relative;
+}
+
+sup {
+    text-decoration: underline;
+}
+
+.tiret {
+    display: flex;
+    justify-content: space-between;
+    
+    
+}
+
+#carrecode{
+    display : inline-block;
+    height : 0;
+    width : 0;
+    border-top : 7px solid rgb(214, 8, 169);
+    border-left : 25px solid rgb(214, 8, 169);
+    position: absolute;
+    top: 4.5rem;
+    left: 23.5rem;
+}
+
+nav {
+    padding: 2rem;
+}
+header a {
+    font-size: .7rem;
+    color: black;
+    font-weight: bolder;
+    text-decoration: none;
+    margin: 1rem;
+}
+
+
+.material-symbols-outlined {
+    font-size: 3.5rem;
+    font-weight: bolder;
+    
+    color: red;
+}
+
+.cerf {
+    width: 20%;
+    position: relative;
+    margin: 3.5rem 23rem;
+    z-index: 1;
+}
+
+#triangle-code{
+    border-top : 150px solid rgb(214, 8, 169);
+    display : inline-block;
+    height : 0;
+    width : 0;
+    border-left : 150px solid transparent;
+    position: absolute;
+    margin: -12rem 23rem 0 23rem;
+    z-index: 0;
+}
+    
+
+.chevron::before {
+    border-style: solid;
+    border-width: 0.25em 0.25em 0 0;
+    content: '';
+    display: inline-block;
+    height: 1.45em;
+    left: 0.15em;
+    position: relative;
+    top: 0.15em;
+    transform: rotate(-45deg);
+    vertical-align: top;
+    width: 1.45em;
+    left: 28rem;
+    
+}
+
+.chevron.bottom:before {
+    top: 0;
+    transform: rotate(135deg);
+    color: rgb(214, 8, 169) ;
+}
+#our {
+   width: 100%;
+   height: 21.3rem;
+   display: flex;
+   padding: 0 0 0 0;
+   margin: 0 0 0 0;
+   justify-content: flex-start;
+   
+}
+
+.story {
+    width: 40%;
+    background-image: url(../img/motif.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 3rem;
+}
+
+.story h2 {
+    color: rgb(4, 4, 4);
+    font-weight: bolder;
+    font-size: 2rem;
+}
+
+.story h4 {
+    color: rgb(251, 12, 195);
+    font-weight: bolder;
+    font-size: 1rem;
+    padding-top: 1rem;
+}
+
+
+.asperge img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+
+#fare {
+    width: 100%;
+    height: 21.3rem;
+    display: flex;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+    justify-content: flex-end;
+    
+}
+
+.fresh {
+    width: 40%;
+    background-image: url(../img/motif.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 3rem;
+}
+
+.fresh h2 {
+    color: rgb(4, 4, 4);
+    font-weight: bolder;
+    font-size: 2rem;
+}
+
+.fresh h4 {
+    color: rgb(251, 12, 195);
+    font-weight: bolder;
+    font-size: .7rem;
+    padding-top: 1rem;
+}
+
+.savon img {
+    max-height: 100%;
+    width: 38rem;
+}
+
+.local {
+    width: 40%;
+    background-image: url(../img/motif.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 3rem;
+} 
+
+.local h2 {
+    color: rgb(4, 4, 4);
+    font-weight: bolder;
+    font-size: 2rem;
+}
+
+.local h4 {
+    color: rgb(251, 12, 195);
+    font-weight: bolder;
+    font-size: .7rem;
+    padding-top: 1rem;
+}
+
+.moules img {
+    max-height: 100%;
+    width: 35rem;
+}
+
+.oeuf img {
+    max-height: 25rem;
+    width: 100%;
+}
+
+footer {
+    background-image: url(../img/motif.jpg);
+    height: 18rem;
+    display: flex;
+    flex-direction: column;
+    
+   
+    
+
+    
+}
+
+#soir {
+    display: flex;
+    align-items: flex-end;
+    
+    text-align: center;
+    padding: 5rem;
+    
+}
+
+h5 {
+    font-size: 2rem;
+    font-weight: bolder;
+    font-style: italic;
+}
+
+.contact {
+    color: deeppink;
+    justify-content: space-between;
+    position: relative;
+    left: 70%;
+    
+}

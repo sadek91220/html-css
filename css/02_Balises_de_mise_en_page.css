@@ -1,0 +1,29 @@
+body {
+    background-color: dimgrey;
+    width: 50%;
+    margin: auto; 
+/* marging= marge exterieure
+   padding= marge interieure */
+    border-style: solid;
+    border-width: 18px;
+/* pour faire des coté different les uns des autres: top right bottom left (sens des aiguilles d'une montre)
+ex: 5 10 5 10
+possibilité de regrouper top/bottom et left/right
+ex: 5(top) 10(left et right) 7(bottom) */
+    border-color: green;
+/* choisir soit en séparé soit en une seule ligne  */
+    border: solid 5px rgba(5, 216, 227, 0.683);
+/* border: posséde les 3 valeurs: type de filet, epaisseur et couleur */
+
+}
+
+
+header {
+    background-color: rgb(84, 171, 149);
+    color: white;
+    height: 200px;
+}
+
+header,main,footer {
+    padding: 20px;
+}

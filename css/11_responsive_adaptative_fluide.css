@@ -1,0 +1,148 @@
+html {
+    font-size: 62.5%;
+}
+
+
+/* ****************************************** Responsive Web Design ****************************************** */
+
+/* Le responsive web design (RWD) englobe les technique de conception de contenu qui permettent de proposer des contennus auto-adaptable en fonction des interfaces de consultation utilisées par l'utilisateur
+
+Dans le cadre du responsive web design on parle de deux caracteristiques importantes:
+- L'ajustement automatique de la taille des éléments : une page web, un élément HTML ou une image peut ainsi se redimensionner en fonction de la taille du terminal utilisé (ordinateur, tablette etc..)
+- L'adaptation de l'agencement des éléments : l'organisation du contenu peut être également adapté automatiquement.
+Le RDW est aujourd'hui un ncontournable dans le monde du devellopement web */
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    font-weight: bold;
+
+}
+
+h2 {
+    color: crimson;
+}
+
+/********************************************* Site Responsive ******************************************** */
+ /* Responsive = reactif en français: un site responsif c'est on utilise le html et css pour redimensionner, masquer, deplacer le contenu pour qu'il apparaisse bien sur n'importe quel ecran*/
+
+.responsive {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.zone1, .zone2, .zone3 {
+    height: 100%;
+    width: 33.33%;
+}
+
+.zone1 {
+    background-color: lightgreen;
+}
+
+.zone2 {
+    background-color: orchid;
+}
+
+.zone3 {
+    background-color: moccasin;
+}
+/* 992px et 1199px */
+
+@media screen and (min-width:992px) and (max-width:1399px) {
+    
+
+    .zone1, .zone2 {
+        width: 50%;
+    }
+
+    .zone3 {
+        width: 100%;
+    }
+    
+}
+
+@media screen and (max-width:992px) {
+    .zone1, .zone2, .zone3 {
+        width: 100%;
+    }
+
+}
+
+/********************************************* Site Adaptative ******************************************** */
+
+/* Grace à l'adapttative design l'utilsateur peut consulter le meme site web avec le meme confort visuel, sans avoir a zoomer ou a defiler la page par exemple, ce qui peut parfois degrader l'experience utilisateur. Ce design offre une tres grande performance */
+
+.zoneadaptative {
+    border: 1px solid black;
+}
+
+@media screen and (min-width:1200px) {
+    .zoneadaptative h2 {
+        font-size: 5rem;
+    }
+
+    .zoneadaptative p {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (min-width:991px) and (max-width:1199px) {
+    .zoneadaptative h2 {
+        font-size: 3rem;
+    }
+
+    .zoneadaptative p {
+        font-size: 1.8rem;
+    }
+}
+
+@media screen and (max-width:991px) {
+    .zoneadaptative h2 {
+        font-size: 2rem;
+    }
+
+    .zoneadaptative p {
+        font-size: 1.5rem;
+        height: 100%;
+    }
+}
+
+/********************************************* Site Fluide ******************************************** */
+
+/* le fluide design est une technique oou le site va s'adapter automatiquement a la resolution de l'utilisateur , pour cela il suffit que tout vos blocs et éléments soit dimensionné en unité fluides */
+
+.zoneFluide {
+    border: 2px solid black;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.zoneFluide h2 {
+    width: 100%;
+}
+
+.zoneG {
+    background-color: green;
+    width: 60%;
+    padding: 20px;
+}
+
+.zoneD {
+    background-color: blue;
+    width: 40%;
+    padding: 20px;
+}
+
+@media screen and (max-width:515px) {
+    .zoneD, .zoneG {
+        width: 100%;
+    }
+    img {
+        width: 100%;
+        height: auto;
+    }
+}

@@ -1,0 +1,44 @@
+:root {
+    --font: 'Rubik', sans-serif;
+}
+
+
+body {
+    background-color: rgb(30, 30, 30);
+}
+
+header {
+    background-color: black;
+    height: 5rem;
+    border-bottom: 0.1rem solid grey;
+    box-shadow: 0rem 0rem 1.9rem .2rem rgba(0, 0, 0, 0.785);
+    font-family: var(--font)
+    
+}
+
+nav img {
+    width: 5%;
+}
+
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    
+}
+
+nav a {
+    text-decoration: none;
+    
+    color: white;
+}
+
+header div {
+    width: 28%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5rem;
+}

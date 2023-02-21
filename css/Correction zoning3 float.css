@@ -1,0 +1,76 @@
+#zoning3 {
+    background-color: #ffd6d6; 
+    width: 800px;
+    color: white;
+    text-align: center  ;
+}
+
+#zoning3 header {
+    background-color: #818e8c;
+    height: 180px;
+}
+
+#zoning3 header .haut  {
+    background-color: #203562;
+    width: 20%;
+    height: 180px;
+    float: left;
+  
+}
+#zoning3 header .haut1 {
+    background-color: #3e588f;
+    width: 60%;
+    float: left;
+    height: 180px;
+}
+
+#zoning3 nav {
+    background-color: #085269;
+    height: 80px;
+}
+
+#zoning3 aside {
+    background-color: #446878;
+    height: 750px;
+    width: 20%;
+    float: left;
+}
+#section {
+    float: left;
+    width: 80%;
+    margin: 0;
+}
+
+#zoning3 section .a {
+    background-color: #c0c5cd;
+    float: left;
+    width: 50%;
+    height: 250px;
+}
+#zoning3 section .b {
+    background-color: #203562;
+    float: left;
+    width: 50%;
+    height: 250px;
+
+}
+
+#zoning3 section.slideshow {
+  background-color: #314a52 ;
+  height: 200px;
+  margin: 0;
+}
+
+#zoning3 .c {
+    background: #c0c5cd;
+    float: left;
+    width: 25%;
+    height: 300px;
+
+}
+#zoning3  .d {
+    background: #203562;
+     float: left;
+     width: 25%;
+     height: 300px;
+}

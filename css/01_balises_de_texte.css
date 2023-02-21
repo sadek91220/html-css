@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
+
+
+span {
+    font-size: 20px;
+}
+p span {
+    font-size: 5px;
+}
+span {
+    color:blueviolet;
+
+}
+h1 {
+    font-family: 'Acme', sans-serif;
+    text-transform: capitalize;
+    /* text-transform: pour mettre en majuscule etc.. */
+    color:darkslategrey
+}
+h2,body {
+    font-family: 'Oswald', sans-serif;
+}
+h4 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px; 
+}
+ul li{
+    list-style-type: square;
+}
+/* ul li => selectionne tout les li dans un éléments ul */
+/* list-style-type: => changer le style de puce */
+
+h3 {
+    color: red;
+    font-style: italic;
+    /* font-style c'est pour mettre en italic (pas en gras) */
+    text-align: center;  
+    /* center pour aligner le texte */
+    font-weight:bold;
+    /* font-weight c'est l'epaisseur de la police (100 => trés fin - 900 => trés epais) bold = gras */
+}

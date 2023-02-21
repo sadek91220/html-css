@@ -1,0 +1,18 @@
+a {
+    text-decoration: none;
+/* text-decoration permet de changer la decoration de texte: souligner, surligner */
+    color: rgb(136, 154, 225);
+
+}
+
+/* Pseudo classes sur les liens: un pseudo classe est un mot clé prefixé par deux points (:) qui s'ajoute au selecteur pour appliquer un style à un élément */
+a:hover {
+    text-decoration: underline;
+    color: aquamarine;
+    background-color: rgb(106, 117, 117);
+}
+/* Au survol: la pseudo classe :hoverdesign un objet survolé par le curseur de la souris, ça peut être un lien ou n'importe quel élément html */
+
+a:visited {color: rgb(202, 73, 17);}
+
+/* Lien visité: le pseudo classe :visited indique un lien dont la page a deja été visité*/

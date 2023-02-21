@@ -1,0 +1,367 @@
+*{  
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    
+}
+body {
+    width: 100%;
+    background-color: rgb(110, 123, 123);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+header {
+    display: flex;
+    width: 100%;
+    height: 20rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-bottom: 2rem;
+    
+
+}
+header img {
+    width: 1%;
+}
+
+h1 {
+    color: chocolate;
+    font-size: 1.75rem;
+    font-family: 'zeyada', cursive;
+    font-weight: bolder;
+    font-style: italic;
+}
+header nav ul li {
+    background-color: rgb(169, 168, 168);
+    width: 100%;
+    padding: 1rem;
+    font-weight: bold;
+}
+header nav {
+    width: 100%;
+    height: 5.3rem;
+}
+
+.section2 {
+    display: none;
+    padding: 1%;
+}
+
+
+
+.section1 {
+    padding: 2rem;
+    text-align: center;
+    align-items: center;
+}
+
+h2 {
+    margin: 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.section1 img {
+    padding: 2% 10%;
+}
+
+.section1 p {
+    text-align: justify;
+    padding: 1% 10%;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    /* height: 2rem; */
+}
+
+.section2 h3 {
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 2% 5%;
+}
+
+.invisible {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: baseline;
+    padding-left: 5%;
+    
+}
+
+.invisible hr {
+    width: 60%;
+    
+}
+
+.invisible ol {
+    padding-left: 12%;
+    list-style-type: decimal;
+}
+
+.vignette {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    
+    
+}
+
+.container {
+    width: 100%;
+    background-color: white;
+    
+}
+
+
+@media (max-width:575.99px) {
+    .col-xs-1 {
+        width: 8.333333%;
+    }
+    .col-xs-2 {
+        width: 16.333333%;
+    }
+    .col-xs-3 {
+        width: 25%;
+    }
+    .col-xs-4 {
+        width: 33.333333%;
+    }
+    .col-xs-5 {
+        width: 41.666666%;
+    }
+    .col-xs-6 {
+        width: 50%;
+    }
+    .col-xs-7 {
+        width: 58.333333%;
+    }
+    .col-xs-8 {
+        width: 66.666666%;
+    }
+    .col-xs-9 {
+        width: 75%;
+    }
+    .col-xs-10 {
+        width: 83.333333%;
+    }
+    .col-xs-11 {
+        width: 91.666666%;
+    }
+    .col-xs-12 {
+        width: 100%;
+    }
+}
+
+@media (min-width:576px) and (max-width: 1199.99px) {
+    .col-md-1 {
+        width: 8.333333%;
+    }
+    .col-md-2 {
+        width: 16.333333%;
+    }
+    .col-md-3 {
+        width: 25%;
+    }
+    .col-md-4 {
+        width: 33.333333%;
+    }
+    .col-md-5 {
+        width: 41.666666%;
+    }
+    .col-md-6 {
+        width: 50%;
+    }
+    .col-md-7 {
+        width: 58.333333%;
+    }
+    .col-md-8 {
+        width: 66.666666%;
+    }
+    .col-md-9 {
+        width: 75%;
+    }
+    .col-md-10 {
+        width: 83.333333%;
+    }
+    .col-md-11 {
+        width: 91.666666%;
+    }
+    .col-md-12 {
+        width: 100%;
+    }
+
+    .container {
+        width: 80%;
+        position: absolute;
+        left: 10%;
+        background-color: white;
+        
+    }
+    header {
+        padding: 0;
+        
+    }
+    nav ul {
+        display: flex;
+        padding: 0 2rem;
+    }
+
+    .section1 {
+        padding: 2rem 0;
+    }
+    .section1 p {
+        text-align: justify;
+        padding: 0 10%;
+    }
+
+    .section1 img {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .section2 {
+        display: block;
+        display: flex;
+        justify-content: flex-end;
+        line-height: 1.5rem;
+    }
+    
+    .section2 hr {
+        margin: .5rem;
+    }
+    
+}
+
+@media (min-width:1200px) {
+    .col-xl-1 {
+        width: 8.333333%;
+    }
+    .col-xl-2 {
+        width: 16.333333%;
+    }
+    .col-xl-3 {
+        width: 25%;
+    }
+    .col-xl-4 {
+        width: 33.333333%;
+    }
+    .col-xl-5 {
+        width: 41.666666%;
+    }
+    .col-xl-6 {
+        width: 50%;
+    }
+    .col-xl-7 {
+        width: 58.333333%;
+    }
+    .col-xl-8 {
+        width: 66.666666%;
+    }
+    .col-xl-9 {
+        width: 75%;
+    }
+    .col-xl-10 {
+        width: 83.333333%;
+    }
+    .col-xl-11 {
+        width: 91.666666%;
+    }
+    .col-xl-12 {
+        width: 100%;
+    }
+
+    .container {
+        width: 70%;
+        position: absolute;
+        right: 15%;
+    }
+    
+    header nav ul li {
+        background-color: white;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        
+    }
+
+    header {
+        height: 10rem;
+        width: 120%;    
+    }
+    
+    
+    nav ul {
+        display: flex;
+        position: absolute;
+        right: 15%;
+        justify-content: space-between;
+       
+        
+    }
+
+    header :first-child {
+        width: 11%;
+    }
+
+    .section1 p {
+        width: 135%;
+    }
+    .section1 img {
+        width: 135%;
+    }
+    .section2 {
+        display: block;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        line-height: 170%;
+        margin: 3.5%;
+    }
+
+    main {
+        display: flex;
+        
+        
+        width: 100%;
+    }
+
+    .invisible {
+        width: 55%;
+        
+    }
+
+    .invisible hr {
+        width: 100%;
+        margin: 2% 0;
+        
+    }
+    .invisible h3 {
+        width: 150%;
+        
+    }
+
+    .vignette {
+        width: 80%;
+        padding: 25% 0 0 18%;
+          
+    }
+
+    .vignette hr {
+        margin-bottom: 5%;
+        width: 90%;
+    }
+}
